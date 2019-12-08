@@ -1,0 +1,1241 @@
+body {
+    margin: 0px;
+    font-family: "proxima_novaregular";
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0px;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.container{
+    width: 70%;
+    margin: 0px auto;
+}
+
+#header {
+ background-color: #005594;
+ padding: 10px 0px;
+ margin-bottom: 7px;
+}
+
+#header .col {
+    width: 80%
+}
+
+#header a {
+ color: #fff;
+}
+
+#header .logo img{
+    width: 110px;
+}
+
+#header .userList ul{
+    margin-top: -4px;
+}
+
+#header .userList ul li{
+    display: inline-block;
+    margin: 0px 6px;
+}
+
+#header .userList ul li a {
+    text-transform: uppercase;
+    font-size: 9px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+#header .userList ul li a:hover{
+ color: goldenrod;
+}
+
+#header .userList ul li:last-child{
+    border-left: 1px solid #36c3ee;
+    padding-left: 12px;
+}
+
+#header .toprow {
+    margin-bottom: 0px;
+}
+
+#main-navigation ul li {
+    display: inline-block;
+    margin: 0px 25px 0px 0px;
+    position: relative;
+}
+
+#main-navigation ul li a {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 10.5px;
+    letter-spacing: 1px;
+}
+
+#main-navigation>ul>li:first-child a{
+    font-size: 15px;
+    margin-left: 5px
+}
+
+#header .worldwide ul{
+    margin-top: -5px;
+    margin-right: 5px;
+}
+
+#header .worldwide ul li{
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 9px;
+    margin: 0px 0px 0px 5px;
+    letter-spacing: 1px
+}
+
+#header .worldwide ul li a:hover{
+    color: goldenrod;
+}
+
+#header .worldwide ul li:last-child{
+    height: 12px;
+    border-bottom: 1px solid #fff;
+}
+
+#main-navigation ul li::after{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0px;
+    width: 100%;
+    display: none;
+    border: 1.5px solid goldenrod;
+    z-index: +6;
+}
+
+#main-navigation ul li:hover:after {
+    display: block;
+}
+
+#main-navigation>ul>li:first-child:hover a{
+    color: goldenrod;
+}
+
+#main-navigation>ul>li:first-child::after{
+    border: none;
+}
+#header .col-1{
+    margin-right: 10px;
+    width: 85%;
+}
+#header .col-2 {
+    width: 14%;
+    margin-top: 7px;
+    margin-right: 0px;
+}
+
+#header .col-2 a {
+    /* display: block; */
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 10px;
+    letter-spacing: 1px;
+    background-color: #336AA0;
+}
+
+#header .col-2 i {
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+#main-navigation .dropdown {
+    position: absolute;
+    display: none;
+    width: 290%;
+    z-index: +11;
+}
+#main-navigation ul li:nth-child(5) .dropdown{
+    width: 440%;
+}
+#main-navigation .dropdown ul li {
+    display: block;
+    margin: 0px;
+    top: 12px;
+    border-bottom: 2px solid #f3f5f7;
+}
+
+#main-navigation ul li:hover .dropdown {
+    display: block;
+}
+
+#main-navigation .dropdown ul li:hover {
+    background-color: #f3f5f7;
+}
+
+#main-navigation .dropdown ul li:hover a{
+    font-family: 'Proxima Nova Extrabold';
+    font-size: 9px;
+    background-color: rgb(241, 239, 239);
+
+}
+
+#main-navigation .dropdown ul li a {
+    color: #005594;
+    font-size: 9px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: block;
+    padding: 11px;
+    background-color: #fff;
+}
+
+#stockMarket{
+    margin-bottom: 20px;
+}
+
+#stockMarket .tabs{
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 10px;
+}
+
+#stockMarket .tabs ul li{
+    display: inline-block;
+    margin-right: 9px;
+    padding-bottom: 4px;
+    position: relative;
+}
+
+#stockMarket .tabs ul li a{
+    font-weight: bold;
+    font-size:10px;
+    letter-spacing: 1px;
+    color: #646262;
+}
+
+#stockMarket .tabs ul li.active::after{
+    content: "";
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
+    width: 100%;
+    border: 1.5px solid #005594;
+    margin-bottom: 2px;
+}
+
+#stockMarket .tabs ul li.active a {
+    color: #005594;
+}
+
+#stockMarket .tabs ul li:nth-last-child(2) a {
+    padding-right: 15px;
+    border-right: 1px solid lightgray;
+}
+
+#stockMarket .tabs ul li:last-child a{
+    font-size: 13px;
+    color: black;
+    font-weight: bold;
+    margin-left: 3px;
+}
+
+#stockMarket .tabs ul li:last-child a:hover{
+    border-bottom:  1px solid black;
+}
+
+#stockMarket .tab-content ul li{
+    display: inline-block;
+    width: 13.8%;
+    background-color: #008456;
+    padding: 5px;
+    margin-right: 3%;
+}
+
+#stockMarket .tab-content .row_1{
+    margin-bottom: 8px;
+}
+
+#stockMarket .tab-content ul li a{
+    color: #fff;
+    font-size: 10px;
+    font-weight: bold;
+    display: block;
+}
+
+#stockMarket .tab-content ul li a:hover{
+    color: lightgray;
+}
+
+#stockMarket .tab-content ul li a span{
+    font-weight: normal;
+    padding-left:  2px;
+}
+
+#adv_1 .advimg{
+    width: 80%;
+    margin: 0px 30% 14px;
+}
+
+#adv_1 .advimg img{
+    width: 48%;
+    margin: auto;
+}
+
+#section_1 .container{
+    position: relative;
+}
+
+#section_1 .heading{
+    width: 82%;
+}
+
+#section_1 .container::before{
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: 0px;
+    border: 3px solid #2077B6;
+    width: 8%;
+}
+
+#section_1 .title{
+    padding-top: 16px;
+    font-size: 25px;
+    color: #002F6C;
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+#section_1 .title::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 102%;
+    border: 1px solid rgb(105, 112, 116);
+    z-index: -1;
+}
+
+#section_1 .headright{
+    border: 1px solid gray;
+    padding-right: 5px;
+    width: 14%;
+}
+#section_1 .headright a{
+    text-align: center;
+    display: block;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 10px 0px;;
+    /* margin: auto; */
+}
+
+#section_1 .headright:hover{
+    background-color: black;
+}
+
+#section_1 .headright:hover a{
+    color: white;
+}
+
+#section_1 .col-1{
+    width: 70%;
+}
+
+#section_1 .col-1 img{
+    margin-left: 230px;
+    width: 70%;
+}
+
+#section_1 .col-1 .image{
+    background-color: #071D39;
+    width: 95%;
+    overflow: hidden;
+}
+
+#section_1 .col-1 .image:hover .desc h2{
+    text-decoration: underline white;
+}
+
+#section_1 .col-1 h2 {
+    font-size: 30px;
+}
+
+#section_1 .col-1 .desc{
+    top: 0px;
+    left: 0px;
+    width: 35%;
+    padding: 0px 30px 50px;
+    z-index: 10;
+    position: absolute;
+    margin-top: 140px;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#section_1 .col-1 .desc p{
+    font-weight: normal;
+    width: 70%;
+    font-size: 12px;
+}
+
+#section_1 .col-1 a {
+    color: #fff;
+}
+
+#section_1 .col-2{
+    width: 30%;
+}
+
+#section_1 .col-2 .image {
+    width: 32%;
+}
+
+#section_1 .col-2 .news {
+    width: 65%;
+    /* border:1px solid  #002F6C */
+}
+#section_1 .col-2 .clearfix{
+    position: relative;
+}
+
+#section_1 .col-2 .news a{
+    font-family: "proxima_novaregular";
+    font-weight: bold;
+    font-size: 14px;
+    color: black;
+}
+
+#section_1 .col-2 .news a:hover{
+    text-decoration: underline black;
+}
+
+#section_1 .col-2 .news p, .time{
+    /* content: "2 hours ago"; */
+    font-size: 9px;
+    text-transform: uppercase;
+    color: #8F8F8F;
+    font-weight: bold;
+    bottom: -5px;
+    letter-spacing: 1px;
+    vertical-align: bottom;
+    /* margin-bottom: 10px; */
+    position: absolute;
+}
+
+
+#section_1 .right ul li{
+    margin-top: 17px;
+    padding-bottom: 12px;
+    border-bottom: 1px dashed #8F8F8F;
+    /* position: absolute; */
+
+    /* height: 100px; */
+}
+#section_1 .right ul li:first-child{
+    margin-top: 0px;
+}
+#section_1 .right ul li:last-child{
+    border: none;
+    padding-bottom: 0px;
+}
+
+#section_1 div>div:nth-child(2){
+    margin-bottom: 10px;
+}
+
+#section_1 div>div:nth-child(3) ul{
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+#section_1 div>div:nth-child(3) ul li{
+    display: inline-block;
+    width: 22.15%;
+    border-top: 1px dashed  #8F8F8F;
+    vertical-align: top;
+    position: relative;
+    height: 83px;
+    padding-bottom: 25px;
+    margin: 0px 14px;
+    /* padding: 10px 0px; */
+}
+
+#section_1 div>div:nth-child(3) ul li .head a{
+    display:block;
+    font-size: 10px;
+    color: #2077B6;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    padding: 10px 0px; 
+}
+
+#section_1 div>div:nth-child(3) ul li .news a{
+    display:block;
+    font-size: 14px;
+    color: black;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+#section_1 div>div:nth-child(3) ul li .head a:hover{
+    color: goldenrod;
+}
+#section_1 div>div:nth-child(3) ul li .news a:hover{
+    text-decoration: underline black;
+}
+
+
+#section_1{
+    margin-bottom: 30px;
+}
+
+#section_2 .div_1::before{
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: 0px;
+    border: 3px solid #2077B6;
+    width: 10%;
+}
+
+#section_2 .left{
+    margin: 0px;
+    padding: 0px;
+    width: 75%
+}
+
+#section_2 .left .div_1{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    border-top: 1px solid rgb(105, 112, 116);
+    padding-top: 28px;
+    margin-bottom: 20px;
+}
+
+#section_2 .div_1 ul li{
+    display: inline-block;
+    width: 31.2%;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px dashed rgb(105, 112, 116);
+    vertical-align: top;
+    position: relative;
+    overflow: hidden;
+}
+
+#section_2 .div_1 .r1 ul li{
+    height: 280px;
+}
+
+#section_2 .div_1 .r2 ul li{
+    height: 140px;
+}
+
+#section_2 .div_1 .r3 ul li{
+    height: 280px;
+    margin-top: 5px;
+}
+
+#section_2 .div_1 .r4 ul li{
+    height: 140px;
+    border: none;
+}
+
+#section_2 .div_1 ul li .time{
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #8F8F8F;
+    font-weight: bold;
+    bottom: 20px;
+    letter-spacing: 1px;
+    vertical-align: bottom;
+    /* margin-bottom: 10px; */
+    position: absolute;
+}
+
+#section_2 .div_1 ul li.first_col{
+    margin-left: 0px;
+}
+
+#section_2 .div_1 ul li p{
+    margin: 0px auto;
+}
+#section_2 .div_1 ul li .category{
+    font-size: 11px;
+    letter-spacing: 1px;
+    display: block;
+    margin-top: 10px;
+    text-transform: uppercase;
+    color: #002F6C;
+    margin-bottom: 0px;
+    font-weight: bold;
+}
+
+#section_2 .div_1 ul li .headline{
+    margin-top: 10px;
+    display: block;
+    color: black;
+    font-family: "proxima_novaregular";
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#section_2 .div_1 ul li .headline:hover{
+    text-decoration: underline;
+}
+#section_2 .div_1 ul li a:hover ~ .headline{
+    text-decoration: underline;
+} 
+
+#section_2 .div_1 ul li .category:hover{
+    color: goldenrod;
+}
+
+#section_2 .div_2::before{
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: 0px;
+    border: 3px solid goldenrod;
+    width: 10%;
+}
+
+#section_2 .left .div_2{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    border-top: 1px solid rgb(105, 112, 116);
+    padding-top: 28px;
+}
+
+#section_2 .left .div_2 h2 a{
+    color: #002F6C;
+    font-size: 29px;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+#section_2 .left .div_2 h2{
+    margin-top: -13px;
+}
+
+#section_2 .left .div_2 a:hover{
+    color: #005594
+}
+
+#section_2 .left .div_2 .t1{
+    border: 1px dashed #8F8F8F;
+    border-top: 5px solid #002F6C;
+    background-color: #FAFBFC;
+    margin-bottom: 25px;
+}
+
+#section_2 .left .div_2 .t1 ul li{
+    display: inline-block;
+    margin-right: 2%;
+    padding-bottom: 0px;
+}
+
+#section_2 .left .div_2 .t1 .row ul li{
+    font-family: 'Proxima Nova Bold';
+}
+
+#section_2 .left .div_2 .t1 .col_1{
+    width: 27%;
+    margin: 20px 0px 0px 25px; 
+}
+
+#section_2 .div_2 .t1 .col_1 h3{
+    margin: 0px;
+    font-size: 19px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#section_2 .div_2 .t1 .col_1 h3 a{
+    color: #002F6C;
+}
+#section_2 .div_2 .t1 .col_1 h3 a:hover{
+    color: #005594;
+}
+
+#section_2 .left .div_2 .t1 .col_2{
+    width: 40%;
+    margin: 25px 0px 0px;
+}
+
+#section_2 .left .div_2 .t1 .col_2 ul li a{
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: gray;
+    letter-spacing: 1px;
+}
+
+#section_2 .left .div_2 .t1 .col_2 ul li a:hover{
+    color: black;
+}
+
+#section_2 .left .div_2 .t1 .col_2 ul li.active a{
+    color: #005594;
+}
+
+#section_2 .left .div_2 .t1 .col_2 ul li.active{
+    border-bottom: 2px solid #005594;
+}
+
+#section_2 .div_2 .t1 .col_left{
+    width: 40%;
+    margin: 25px 50px 0px 25px;
+}
+
+#section_2 .div_2 .t1 .col_left h4{
+    font-size: 13px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+}
+
+#section_2 .div_2 .t1 .col_right{
+    width: 40%;
+    margin: 25px 50px 0px 25px;
+}
+
+#section_2 .div_2 .t1 .col_right h4{
+    font-size: 13px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+}
+
+#section_2 .div_2 .t1 table{
+    width: 98%;
+    margin-bottom: 12px;
+}
+
+
+#section_2 .div_2 .t1 table td.initial{
+    width: 6%;
+    /* border: 1px solid red; */
+}
+
+#section_2 .div_2 .t1  table td.initial a{
+    font-family: 'Proxima Nova Bold';
+    color: #4a4a4a;
+}
+
+#section_2 .div_2 .t1 table td.initial:hover a{
+    color: #005594
+}
+
+#section_2 .div_2 .t1 table td.name{
+    width: 32%;
+    margin-left: 3px;
+    font-family: 'Proxima Nova Bold';
+    /* border: 1px solid green; */
+}
+
+#section_2 .div_2 .t1 table td.name a{
+    color: rgb(116, 116, 116);
+    letter-spacing: 1px;
+}
+
+#section_2 .div_2 .t1 .col_left table td.percent{
+    width: 10%;
+    /* border: 1px solid red; */
+    color: #008456;
+}
+#section_2 .div_2 .t1 .col_left table td.bar{
+    width: 33%;
+    /* border: 1px solid red; */
+}
+
+#section_2 .div_2 .t1 .col_left table td.bar div{
+    height: 13px;
+    background-color: #008456;
+}
+
+#section_2 .div_2 .t1 table td{
+    font-size: 10px;
+    font-weight: bold;
+    padding-bottom: 7px;
+}
+
+#section_2 .div_2 .t1 table td a{
+    font-size: 11px;
+    font-weight: bold;
+}
+
+#section_2 .div_2 .t1 .col_right table td.percent{
+    width: 10%;
+    /* border: 1px solid red; */
+    color: #CE2B2B;
+}
+#section_2 .div_2 .t1 .col_right table td.bar{
+    width: 33%;
+    /* border: 1px solid red; */
+}
+
+#section_2 .div_2 .t1 .col_right table td.bar div{
+    height: 13px;
+    background-color: #CE2B2B;
+}
+
+#section_2 .div_2 .ldiv{
+    width: 54%;
+}
+
+#section_2 .div_2 .ldiv .t2{
+    border-top: 5px solid #002F6C;
+    padding-top: 20px;
+}
+
+#section_2 .div_2 .ldiv .t3{
+    border-top: 5px solid #002F6C;
+    padding-top: 20px;
+}
+
+#section_2 .div_2 .ldiv table{
+    margin-top: 15px;
+    margin-bottom: 30px;
+    background: white;
+}
+
+#section_2 .div_2 .ldiv table thead td{
+    font-size: 10px;
+    letter-spacing: 1px;
+    color: #797979;
+    text-transform: uppercase;
+    font-family: "Proxima Nova Bold";
+    border-bottom: 1px dashed #8F8F8F;
+    padding-bottom: 7px;
+    margin: 0px;
+    margin-bottom: 15px;
+}
+#section_2 .div_2 .ldiv table tbody::before{
+    /* line-height: 20px; */
+    content: "";
+    height: 10px;
+    display: block;
+}
+
+#section_2 .div_2 .ldiv table .name{
+    width: 20%;
+    /* border: 1px solid red; */
+    padding-left: 7px;
+}
+
+#section_2 .div_2 .ldiv table .name a{
+    font-family: "Proxima Nova Extrabold";
+    color: #494949;
+}
+
+#section_2 .div_2 .ldiv table .name a:hover{
+    color: #005594;
+}
+
+#section_2 .div_2 .ldiv table .price{
+    width: 20%;
+    /* border: 1px solid red; */
+    text-align: right;
+    padding-right: 3px;
+}
+
+#section_2 .div_2 .ldiv table .chg{
+    width: 16%;
+    /* border: 1px solid red; */
+    text-align: right;
+    padding-right: 17px;
+}
+
+#section_2 .div_2 .ldiv table .chgPer{
+    width: 18%;
+    /* border: 1px solid red; */
+    text-align: right;
+}
+
+#section_2 .div_2 .ldiv table .vol{
+    width: 26%;
+    /* border: 1px solid red; */
+    text-align: right;
+    padding-right: 3px;
+}
+
+#section_2 .div_2 .ldiv table tbody{
+    color: #494949;
+    font-size: 9.5px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#section_2 .div_2 .ldiv table i{
+    /* height: 10px; */
+    font-size: 15px;
+}
+
+#section_2 .div_2 .ldiv table tbody td{
+    padding-top: 6px;;
+    overflow: hidden;
+}
+
+#section_2 .div_2 .ldiv table tbody td.chgPer{
+    padding-top: 0px;
+}
+
+#section_2 .div_2 .ldiv table tbody tr{
+    height: 25px;
+}
+
+#section_2 .div_2 .ldiv .gain{
+    color: #008456;
+}
+
+#section_2 .div_2 .ldiv .loss{
+    color: #CE2B2B;
+}
+
+#section_2 .div_2 .ldiv .even{
+    background-color: rgb(241, 241, 241);
+}
+
+#section_2 .div_2 .rdiv{
+    width: 42.5%;
+    border-top: 5px solid #002F6C;
+    padding-top: 20px;
+    position: unset;
+}
+
+#section_2 .div_2 .rdiv h2, #section_2 .div_2 .ldiv h2{
+    /* font-size: 22px; */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 19px;
+    font-weight: 900;
+    text-transform: uppercase;
+    /* letter-spacing: 1px; */
+    color: #002F6C;
+    margin-bottom: 14px;
+}
+
+#section_2 .div_2 .rdiv h3 a{
+    font-size: 19px;
+    font-family: "Proxima Nova Bold";
+    display: block;
+    /* letter-spacing: 1px; */
+    color: black;
+    font-weight: bold;
+    /* word-spacing: 2px; */
+}
+
+#section_2 .div_2 .rdiv h3{
+    margin:0px;
+    padding-bottom: 10px;
+}
+
+#section_2 .div_2 .rdiv h3:hover a{
+    color: black;
+    text-decoration: underline;
+}
+
+#section_2 .div_2 .rdiv>a{
+    color: #005594;
+    font-size: 10px;
+    margin-top: -20px;
+    font-weight: bold;
+    font-family: Lyon Text;
+}
+
+#section_2 .div_2 .rdiv>a:hover{
+    text-decoration: underline;
+}
+
+#section_2 .div_2 .rdiv ul{
+    margin-top: 33px;
+}
+
+#section_2 .div_2 .rdiv ul li{
+    border-top: 1px dashed #8F8F8F;
+    padding: 18px 0px;
+}
+
+#section_2 .div_2 .rdiv ul li a{
+    font-size: 15px;
+    display: block;
+    color: black;
+    font-family: "Proxima Nova Semibold";
+}
+
+#section_2 .div_2 .rdiv ul li a:hover{
+    color: black;
+    text-decoration: underline;
+}
+
+#section_2 .right{
+    position: sticky;
+    top: 25px;
+    width: 22%;
+    margin: 0px 0px 25px;
+    padding: 0px;
+}
+
+#section_3{
+    background-color: #171717;
+    height: 450px;
+    padding-top: 25px;
+    margin-bottom: 30px;
+}
+
+#footer{
+    background-color: #071D39;
+    padding-top: 30px;
+    margin-top: 30px;
+}
+
+#footer .toprow{
+    border-bottom: 1px solid #797979;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+#footer .toprow .col-1{
+    width: 11%;
+}
+#footer .toprow .col-2{
+    width: 26%;
+    /* border: 1px solid green */
+    text-align: center;
+    margin-right: -12px;
+}
+
+#footer .toprow .col-2 ul li{
+    display: inline-block;
+    width: 10%;
+    /* text-align: ; */
+    padding: 3px 0px;
+    margin-left: 4px;
+}
+
+#footer .toprow .col-2 a{
+    color: white;
+    font-size: 17px;
+    /* border: 1px solid pink; */
+    padding: 3px 0px;
+}
+
+#footer .toprow .col-2 a:hover{
+    color: goldenrod;
+}
+
+#footer .bottomrow {
+    margin-bottom: 25px;
+}
+
+#footer .bottomrow .col-l{
+    width: 49%;
+    margin: 0px;
+    padding:0px;
+}
+
+#footer .outerlist>li{
+    width: 32.8%;
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+}
+
+#footer .innerlist li {
+    margin-bottom: 10px;
+    padding: 3px 0px;
+}
+
+#footer .innerlist li a{
+    display: block;
+    color: white;
+    font-size: 12px;
+    font-family: 'Proxima Nova Regular'
+}
+
+#footer .innerlist li a:hover{
+    color: goldenrod;
+}
+
+#footer .bottomrow .col-r{
+    width: 50%;
+}
+/* 
+#footer .bottomrow .col-r{
+    display: inline-block;
+    position: absolute
+} */
+
+#footer .col-r .col-1{
+    width: 43%;
+}
+#footer .col-r .col-2{
+    width: 7%;
+}
+#footer .col-r .col-3{
+    width: 46%;
+}
+
+#footer .col-r .col-1, #footer .col-r .col-3 {
+    color: white;
+}
+
+#footer .col-r .col-1 h2, #footer .col-r .col-3 h2{
+    margin: 0px 0px 8px;
+    padding: 0px;
+    font-size: 20px;
+    font-family: 'Proxima Nova Extrabold';
+}
+
+#footer .col-r .col-1 p, #footer .col-r .col-3 p{
+    font-size: 12px;
+    font-family: Lyon;
+    margin-bottom: 19px;
+}
+
+#footer .col-r .col-1 a,#footer .col-r .col-3 a{
+    font-size: 10px;
+    font-family: 'Proxima Nova Bold';
+    width: 100px;
+    letter-spacing: 1px;
+    border: 1px solid white;
+    color: white;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    padding: 10px 10px;
+}
+
+#footer .col-r .col-1 a:hover, #footer .col-r .col-3 a:hover{
+    color: #071d39;
+    background-color: #ffbc05;
+    border-color: #ffbc05;;
+}
+#footer .col-r .col-2{
+    text-align: right;
+    padding: 0px;
+    margin: 0px;
+    margin-top: -4px;
+}
+#footer .col-r .col-2 i{
+    color: white;
+    margin: 0px;
+    padding: 0px;
+}
+
+#footer .col-r .col-2 div{
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+}
+
+#footer .col-r .col-2  div:first-child{
+    width: 30%;
+    margin-right: -5px;
+    vertical-align: top;    
+    margin-top: 7px;
+}
+
+#footer .col-r .col-2  div:nth-child(2){
+    width: 60%;
+    padding-top: 5px;
+}
+
+#footer .col-r .col-2  div:first-child i{
+    font-size: 12px;
+}
+
+#footer .col-r .col-2  div:nth-child(2) i{
+    font-size: 21px;
+}
+
+#footer .col-r .col-3{
+    margin-top: 2px;
+    margin-left: 5px;
+}
+
+#footer .col-r .col-3 p.small{
+    margin-top: 15px;
+    font-size: 9px;
+    letter-spacing: 0.1px;
+    font-family: 'Proxima Nova Light';
+    width:95%;
+    color: rgb(194, 193, 193);
+}
+
+#footer .copyrights{
+    padding-bottom: 25px;
+}
+
+#footer .copyrights p{
+    margin: 0px;
+    padding: 0px;
+    color: hsla(0,0%,100%,.7);
+    font-size: 8.5px;
+    letter-spacing: 0.3px;
+    font-family: 'Proxima Nova Semibold';
+    position: relative;
+}
+
+#footer .copyrights p a{
+    color: hsla(0,0%,100%,.7);
+    font-size: 8.5px;
+    letter-spacing: 0.3px;
+    font-family: 'Proxima Nova Semibold';
+}
+
+#footer .copyrights p:first-child{
+    margin-bottom: 15px;
+}
+#footer .copyrights p:nth-child(2){
+    margin-bottom: 20px;
+}
+
+#footer .copyrights p:nth-child(3) img{
+    width: 5%;
+    padding-top: 0px;
+    position: absolute;
+    margin-top: -4px;
+}
